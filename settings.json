@@ -10,7 +10,6 @@
   "workbench.layoutControl.enabled": false,
   "window.commandCenter": false,
   "workbench.activityBar.location": "bottom",
-  "editor.minimap.enabled": false,
   "workbench.sideBar.location": "right",
   "workbench.tree.renderIndentGuides": "none",
   "workbench.editor.editorActionsLocation": "hidden",
@@ -117,10 +116,10 @@
     ".filematch .monaco-count-badge": "padding: 5px 6px 0 6px !important",
     ".sidebar .title-label": "padding: 0 !important",
     ".monaco-workbench .monaco-list:not(.element-focused):focus:before": "outline: none !important",
-    ".sidebar": "border: none !important",
+    // ".sidebar": "border: none !important",
     ".monaco-editor .cursors-layer .cursor": "background-image: linear-gradient(135deg, #67D0FF 10%, #C45DFF 100%)",
     ".quick-input-list-row div": "display: flex !important; align-items: center !important",
-    ".panel .composite.title": "visibility: hidden !important",
+    // ".panel .composite.title": "visibility: hidden !important",
     ".title.show-file-icons .label-container .monaco-icon-label.file-icon": "padding-bottom: 6px !important",
     ".sidebar .title-label h2": "line-height: 2.8 !important",
     ".monaco-editor .scroll-decoration": "display: none !important",
@@ -164,5 +163,7 @@
       ],
     },
   },
-  "git.openRepositoryInParentFolders": "never"
+  "git.openRepositoryInParentFolders": "never",
+  "editor.minimap.enabled": false,
+  "security.workspace.trust.untrustedFiles": "open"
 }
