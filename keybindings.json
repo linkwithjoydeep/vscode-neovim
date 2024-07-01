@@ -25,9 +25,44 @@
     "command": "workbench.action.navigateBack"
   },
   {
-    "key": "space ,",
+    "key": "space f b",
     "command": "workbench.action.showAllEditors",
     "when": "neovim.mode == 'normal' && (editorTextFocus || !inputFocus)"
+  },
+  {
+    "key": "space f f",
+    "command": "workbench.action.quickOpen",
+    "when": "neovim.mode == 'normal' && (editorTextFocus || !inputFocus)"
+  },
+  {
+    "key": "space f g",
+    "command": "workbench.action.findInFiles",
+    "when": "neovim.mode == 'normal' && (editorTextFocus || !inputFocus)"
+  },
+  // toggle terminal panel
+  {
+    "key": "ctrl+shift+j",
+    "command": "workbench.action.togglePanel"
+  },
+  {
+    "key": "ctrl+shift+n",
+    "command": "workbench.action.terminal.new",
+    "when": "terminalFocus"
+  },
+  {
+    "key": "ctrl+shift+w",
+    "command": "workbench.action.terminal.kill",
+    "when": "terminalFocus"
+  },
+  {
+    "key": "ctrl+shift+n",
+    "command": "workbench.action.terminal.focusNext",
+    "when": "terminalFocus"
+  },
+  {
+    "key": "ctrl+shift+p",
+    "command": "workbench.action.terminal.focusPrevious",
+    "when": "terminalFocus"
   },
   {
     "key": "space e",
@@ -56,11 +91,11 @@
     "when": "neovim.mode == 'normal' && editorTextFocus && foldersViewVisible",
     "command": "workbench.action.toggleSidebarVisibility"
   },
-  {
-    "key": "tab",
-    "command": "workbench.action.nextEditorInGroup",
-    "when": "(neovim.mode == 'normal' || neovim.mode == 'visual') && (editorTextFocus || !inputFocus)"
-  },
+  // {
+  //   "key": "tab",
+  // "command": "workbench.action.nextEditorInGroup",
+  //   "when": "(neovim.mode == 'normal' || neovim.mode == 'visual') && (editorTextFocus && !inputFocus && !sideBarFocus)"
+  // },
   {
     "key": "shift-tab",
     "command": "workbench.action.previousEditorInGroup",
@@ -70,6 +105,11 @@
   {
     "key": "space w",
     "command": "workbench.action.files.save",
+    "when": "neovim.mode == 'normal' && editorTextFocus"
+  },
+  {
+    "key": "space q",
+    "command": "workbench.action.closeActiveEditor",
     "when": "neovim.mode == 'normal' && editorTextFocus"
   },
   {
@@ -88,26 +128,6 @@
     "when": "neovim.mode == 'normal' && editorTextFocus"
   },
   {
-    "key": "space c a",
-    "command": "editor.action.codeAction",
-    "when": "neovim.mode == 'normal' && editorTextFocus"
-  },
-  {
-    "key": "space c r",
-    "command": "editor.action.rename",
-    "when": "neovim.mode == 'normal' && editorTextFocus"
-  },
-  {
-    "key": "space g s",
-    "command": "workbench.action.gotoSymbol",
-    "when": "neovim.mode == 'normal' && editorTextFocus"
-  },
-  {
-    "key": "space b d",
-    "command": "workbench.action.closeActiveEditor",
-    "when": "neovim.mode == 'normal' && editorTextFocus"
-  },
-  {
     "key": "space z a",
     "command": "editor.toggleFold",
     "when": "neovim.mode == 'normal' && editorTextFocus"
@@ -123,9 +143,19 @@
     "when": "neovim.mode == 'normal' && editorTextFocus"
   },
   {
-    "key": "space space",
-    "command": "workbench.action.quickOpen",
-    "when": "neovim.mode == 'normal' && (editorTextFocus || !inputFocus)"
+    "key": "space c a",
+    "command": "editor.action.codeAction",
+    "when": "neovim.mode == 'normal' && editorTextFocus"
+  },
+  {
+    "key": "space c r",
+    "command": "editor.action.rename",
+    "when": "neovim.mode == 'normal' && editorTextFocus"
+  },
+  {
+    "key": "space g s",
+    "command": "workbench.action.gotoSymbol",
+    "when": "neovim.mode == 'normal' && editorTextFocus"
   },
   {
     "key": "space g d",
@@ -143,11 +173,6 @@
     "when": "neovim.mode == 'normal' && editorTextFocus"
   },
   {
-    "key": "space s g",
-    "command": "workbench.action.findInFiles",
-    "when": "neovim.mode == 'normal' && (editorTextFocus || !inputFocus)"
-  },
-  {
     "key": "space g g",
     "command": "runCommands",
     "when": "neovim.mode == 'normal' && (editorTextFocus || !inputFocus)",
@@ -162,6 +187,11 @@
     "key": "space g f",
     "command": "editor.action.formatSelection",
     "when": "neovim.mode == 'visual' && editorTextFocus"
+  },
+  {
+    "key": "space g c",
+    "command": "editor.action.commentLine",
+    "when": "(neovim.mode == 'normal' || neovim.mode == 'visual') && (editorTextFocus || !inputFocus)"
   },
   {
     "key": "ctrl-n",
