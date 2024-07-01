@@ -69,7 +69,8 @@
   // Coding
   {
     "key": "space w",
-    "command": "workbench.action.files.save"
+    "command": "workbench.action.files.save",
+    "when": "neovim.mode == 'normal' && editorTextFocus"
   },
   {
     "key": "shift-j",
