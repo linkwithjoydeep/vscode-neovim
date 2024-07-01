@@ -1,0 +1,168 @@
+{
+  // Set default settings editor to JSON instead of UI
+  "workbench.settings.editor": "json",
+  // Themes
+  "workbench.iconTheme": "moxer-icons",
+  "workbench.colorTheme": "Aura Dracula Spirit (Soft)",
+  // Layout and UI Customizations
+  "window.zoomLevel": 0.3,
+  "window.titleBarStyle": "custom",
+  "workbench.layoutControl.enabled": false,
+  "window.commandCenter": false,
+  "workbench.activityBar.location": "bottom",
+  "editor.minimap.enabled": false,
+  "workbench.sideBar.location": "right",
+  "workbench.tree.renderIndentGuides": "none",
+  "workbench.editor.editorActionsLocation": "hidden",
+  "workbench.colorCustomizations": {
+    "editorSuggestWidget.selectedBackground": "#231739",
+    "sideBar.background": "#191521",
+    "list.activeSelectionBackground": "#231739",
+    "list.inactiveSelectionBackground": "#231739",
+    "list.focusBackground": "#231739",
+    "list.hoverBackground": "#231739",
+    "terminalCursor.foreground": "#C45DFF",
+    "[Aura Dracula Spirit (Soft)]": {
+      "editor.background": "#191521",
+      "terminal.background": "#191521",
+      "activityBar.background": "#191521",
+      "statusBar.background": "#191521",
+      "editorGroupHeader.tabsBackground": "#191521",
+      "tab.inactiveBackground": "#191521"
+    }
+  },
+  "editor.renderWhitespace": "none",
+  "editor.renderLineHighlight": "none",
+  "editor.scrollbar.horizontal": "hidden",
+  "editor.scrollbar.vertical": "hidden",
+  "editor.overviewRulerBorder": false,
+  "editor.cursorBlinking": "expand",
+  "editor.cursorStyle": "line",
+  "editor.cursorSmoothCaretAnimation": "on",
+  "editor.guides.indentation": false,
+  // Fonts
+  "editor.fontFamily": "Dank Mono",
+  "scm.inputFontFamily": "Dank Mono",
+  "editor.fontLigatures": true,
+  "editor.fontSize": 15,
+  "editor.lineHeight": 1.5,
+  "terminal.integrated.fontFamily": "Dank Mono, JetBrainsMono Nerd Font",
+  "terminal.integrated.tabs.enabled": false,
+  "terminal.integrated.lineHeight": 1.8,
+  "terminal.integrated.fontSize": 14,
+  "terminal.integrated.cursorBlinking": true,
+  "terminal.integrated.cursorStyle": "line",
+  "chat.editor.fontFamily": "Dank Mono",
+  "debug.console.fontFamily": "Dank Mono",
+  "editor.codeLensFontFamily": "Dank Mono",
+  "notebook.output.fontFamily": "Dank Mono",
+  "markdown.preview.fontFamily": "Dank Mono",
+  "editor.inlayHints.fontFamily": "Dank Mono",
+  // Misc
+  "editor.formatOnSave": true,
+  "workbench.startupEditor": "none",
+  "workbench.tips.enabled": false,
+  "explorer.confirmDragAndDrop": false,
+  "explorer.confirmDelete": false,
+  "explorer.compactFolders": false,
+  "files.insertFinalNewline": true,
+  "extensions.ignoreRecommendations": true,
+  "editor.linkedEditing": true,
+  "editor.lineNumbers": "relative",
+  "breadcrumbs.enabled": false,
+  "editor.tabSize": 2,
+  "editor.detectIndentation": false,
+  "files.autoSave": "off",
+  "files.trimTrailingWhitespace": true,
+  "[markdown]": {
+    "files.trimTrailingWhitespace": false
+  },
+  "editor.bracketPairColorization.enabled": true,
+  //APC Customizations
+  "animations.Install-Method": "Apc Customize UI++",
+  "apc.imports": [
+    "file://${userHome}/.vscode/extensions/brandonkirbyson.vscode-animations-2.0.3/dist/updateHandler.js"
+  ],
+  "apc.activityBar": {
+    "position": "bottom",
+    "hideSettings": true,
+    "size": 30,
+    "itemSize": 30,
+    "itemMargin": 10
+  },
+  "apc.electron": {
+    "titleBarStyle": "hiddenInset"
+  },
+  "apc.font.family": "Dank Mono",
+  "apc.monospace.font.family": "Dank Mono",
+  "apc.statusBar": {
+    "position": "editor-bottom",
+    "height": 25,
+    "fontSize": 12
+  },
+  "apc.sidebar.titlebar": {
+    "height": 0
+  },
+  "apc.stylesheet": {
+    // ".sidebar > .title": "display: none !important",
+    ".tabs-and-actions-container > .editor-actions": "display: none !important",
+    ".titlebar-center": "display: none !important",
+    ".titlebar-right": "display: none !important",
+    ".inline-tabs-placeholder": "display: none !important",
+    ".split-view-view .visible": "background-color: #191521 !important",
+    ".title-label": "display: none !important",
+    ".title-actions": "display: none !important",
+    ".quick-input-widget.show-file-icons, .editor-widget.find-widget": "box-shadow: none !important",
+    ".filematch .monaco-icon-label:before, .custom-list-row.results .monaco-list-row .monaco-icon-label:before": "background-position: 0 bottom !important",
+    ".filematch .monaco-count-badge": "padding: 5px 6px 0 6px !important",
+    ".sidebar .title-label": "padding: 0 !important",
+    ".monaco-workbench .monaco-list:not(.element-focused):focus:before": "outline: none !important",
+    ".sidebar": "border: none !important",
+    ".monaco-editor .cursors-layer .cursor": "background-image: linear-gradient(135deg, #67D0FF 10%, #C45DFF 100%)",
+    ".quick-input-list-row div": "display: flex !important; align-items: center !important",
+    ".panel .composite.title": "visibility: hidden !important",
+    ".title.show-file-icons .label-container .monaco-icon-label.file-icon": "padding-bottom: 6px !important",
+    ".sidebar .title-label h2": "line-height: 2.8 !important",
+    ".monaco-editor .scroll-decoration": "display: none !important",
+    ".monaco-scrollable-element > .shadow.top": "display: none !important",
+    ".monaco-split-view2 > .monaco-scrollable-element > .split-view-container": "background: #191521 !important",
+  },
+  "apc.listRow": {
+    "lists": [
+      "customview-tree",
+      "quick-input-list",
+      "results",
+      "open-editors",
+      "explorer-folders-view",
+      "outline-tree",
+      "scm-view",
+      "debug-view-content",
+      "debug-breakpoints",
+      "tree"
+    ],
+    "height": 30,
+    "fontSize": 14
+  },
+  // Neovim
+  "vscode-neovim.neovimExecutablePaths.darwin": "/opt/homebrew/bin/nvim",
+  "vscode-neovim.neovimInitVimPaths.darwin": "$HOME/.config/nvim-vscode/init.lua",
+  "extensions.experimental.affinity": {
+    "asvetliakov.vscode-neovim": 1
+  },
+  "vscode-neovim.compositeKeys": {
+    "jj": {
+      "command": "vscode-neovim.escape",
+    },
+    "jk": {
+      "command": "vscode-neovim.lua",
+      "args": [
+        [
+          "local code = require('vscode')",
+          "code.action('vscode-neovim.escape')",
+          "code.action('workbench.action.files.save')",
+        ],
+      ],
+    },
+  },
+  "git.openRepositoryInParentFolders": "never"
+}
