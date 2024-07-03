@@ -41,11 +41,11 @@
   },
   // toggle terminal panel
   {
-    "key": "ctrl+shift+j",
+    "key": "ctrl+shift+t",
     "command": "workbench.action.togglePanel"
   },
   {
-    "key": "ctrl+shift+n",
+    "key": "ctrl+shift+a",
     "command": "workbench.action.terminal.new",
     "when": "terminalFocus"
   },
@@ -257,3 +257,4 @@
     "when": "filesExplorerFocus && foldersViewVisible && !explorerResourceIsRoot && explorerResourceIsFolder && !inputFocus"
   }
 ]
+
