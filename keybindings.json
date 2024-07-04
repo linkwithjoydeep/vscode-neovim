@@ -115,12 +115,12 @@
   {
     "key": "shift-j",
     "command": "editor.action.moveLinesDownAction",
-    "when": "neovim.mode == 'visualLine' && editorTextFocus"
+    "when": "neovim.mode == 'visual' && editorTextFocus"
   },
   {
     "key": "shift-k",
     "command": "editor.action.moveLinesUpAction",
-    "when": "neovim.mode == 'visualLine' && editorTextFocus"
+    "when": "neovim.mode == 'visual' && editorTextFocus"
   },
   {
     "key": "shift-k",
